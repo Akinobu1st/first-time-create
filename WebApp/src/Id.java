@@ -1,4 +1,4 @@
-//a
+//ax
 public class Id {
 	final String id_1= "akinobu satou";                                                   //アカウントID（佐藤）
 	final String id_2= "kenta masumoto";                                              //アカウントID（増本）
@@ -21,7 +21,7 @@ public class Id {
 	    	 System.out.println("IDが不正です");
 	    	 break;
 
-	     }a
+	     }
 
 	}
 }
