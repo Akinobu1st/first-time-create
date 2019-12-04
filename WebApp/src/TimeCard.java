@@ -1,19 +1,20 @@
 import javax.swing.JFrame;
-
-
+import javax.swing.JButton;
+import java.awt.Component;
 
 
 public class TimeCard  extends JFrame{
 
-	   public TimeCard() {
-		   TimeCard frame = new TimeCard("Time Card");
-		   frame.setVisible(ture);
+
+	   public String JButton(String text,String tx) {
+		   String text = "Start" ;
+		   String Ftext ="Finish";
+		   return Stext , Ftext;
 
 
 
 
-	    }
-
+	   }
 
 
 
