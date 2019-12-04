@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 //q
+=======
+//aaa
+>>>>>>> c6d02259d9228e1a690162b7db22702451958127
 public class Id {
 	final String id_1= "akinobu satou";                                                   //アカウントID（佐藤）
 	final String id_2= "kenta masumoto";                                              //アカウントID（増本）
@@ -21,7 +25,7 @@ public class Id {
 	    	 System.out.println("IDが不正です");
 	    	 break;
 
-	     }
+	     }a
 
 	}
 }
