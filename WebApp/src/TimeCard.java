@@ -1,22 +1,9 @@
-//sa
-import javax.swing.JFrame;
-import javax.swing.JButton;
-import java.awt.Component;
+import java.util.Scanner;
 
-
-public class TimeCard  extends JFrame{
-
-
-	   public String JButton(String text,String tx) {
-		   String text = "Start" ;
-		   String Ftext ="Finish";
-		   return Stext , Ftext;
-
-
-
-
-	   }
-
-
-
-}
+public class TimeCard{
+	Scanner scan = new Scanner(System.in);//TimeCardインスタンス作成
+   void name(){
+	   System.out.println("名前を入力して下さい。");
+   }
+ 
+    }
