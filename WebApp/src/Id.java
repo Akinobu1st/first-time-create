@@ -2,8 +2,7 @@
 public class Id {
 	final String id_1= "akinobu satou";                                                   //アカウントID（佐藤）
 	final String id_2= "kenta masumoto";                                              //アカウントID（増本）
-
-
+	
 	void id() {
 	     System.out.println("Your ID");
 	     String ID =new java.util.Scanner( System.in ).nextLine();    		 // IDを入力
