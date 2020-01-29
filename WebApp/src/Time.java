@@ -1,13 +1,12 @@
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class Time {
-	Date now = new Date();//TIMEインスタンス作成
-	SimpleDateFormat f = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");//TIMEインスタンス作成
-	
-	
-public boolean equals (Object o) { 
-	if(o == this) return true;//equalsのオーバーライド
-	return false;
+public class Time{
+	static void Timeset() {
+        	Date date = new Date();
+        SimpleDateFormat sdf1 = new SimpleDateFormat("yyyy年MM月dd日 HH時mm分ss秒");
+        System.out.println(sdf1.format(date));
+        }
 	}
-}
+
+      
