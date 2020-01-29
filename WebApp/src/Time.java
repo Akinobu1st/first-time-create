@@ -6,7 +6,11 @@ public class Time{
         	Date date = new Date();
         SimpleDateFormat sdf1 = new SimpleDateFormat("yyyy年MM月dd日 HH時mm分ss秒");
         System.out.println(sdf1.format(date));
+
+        SimpleDateFormat sdf2 = new SimpleDateFormat("yyyy年MM月dd日 HH時mm分ss秒");
+        System.out.println(sdf2.format(date));
+
         }
 	}
 
-      
+
