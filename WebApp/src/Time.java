@@ -2,10 +2,10 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class Time{
-	 Date date1;
-	 Date date2;
-	long nowStart1;
-	long nowStop2;
+	 Date date1;																						//勤務ボタン実行時の日時(date型)
+	 Date date2;																						//退勤ボタン実行時の日時(date型)
+	long nowStart1;																				//勤務ボタン実行時の日時（long型)
+	long nowStop2;																				//退勤ボタン実行時の日時（long型)
 
 	 public long timer(long nowStart, long nowStop ) {
 
@@ -14,7 +14,7 @@ public class Time{
 
 		long timeDiff = (nowStop - nowStart);
 
-		 return timeDiff;
+		 return timeDiff;																			//勤務時間
 
 
 	 }
@@ -35,7 +35,7 @@ public class Time{
 		 SimpleDateFormat sdf2 = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
 		 System.out.println(sdf2.format(date2));
 
-		 long timeDiff = timer(this.nowStart1, this.nowStop2);
+		 long timeDiff = timer(this.nowStart1, this.nowStop2);					//timerメソッドの戻り値
 		 System.out.println(timeDiff);
 	 }
 
