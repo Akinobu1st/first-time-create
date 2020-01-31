@@ -2,15 +2,26 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class Time{
-	static  Date date1;
-	static  Date date2;
-	static long nowStart1;
-	 static long nowStop2;
+	 Date date1;
+	 Date date2;
+	long nowStart1;
+	long nowStop2;
+
+	 public long timer(long nowStart, long nowStop ) {
+
+		this.nowStart1 =  date1.getTime();
+		this.nowStop2 =  date2.getTime();
+
+		long timeDiff = (nowStop - nowStart);
+
+		 return timeDiff;
 
 
-	 static void timeSet1() {
+	 }
 
-		 Date date1 = new Date();
+	 public void timeSet1() {
+
+		  this.date1 = new Date();
         SimpleDateFormat sdf1 = new SimpleDateFormat("yyyy/MM/dd/ HH:mm:ss");
         System.out.println(sdf1.format(date1));
 
@@ -18,25 +29,17 @@ public class Time{
 
         	}
 
-	 static void timeSet2() {
+	public void timeSet2() {
 
-		Date date2 = new Date();
+		this.date2 = new Date();
 		 SimpleDateFormat sdf2 = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
 		 System.out.println(sdf2.format(date2));
+
+		 long timeDiff = timer(this.nowStart1, this.nowStop2);
+		 System.out.println(timeDiff);
 	 }
 
-	 static long timer(long nowStart1, long nowStop2 ) {
 
-		 nowStart1 =  date1.getTime();
-		 nowStop2 =  date2.getTime();
-
-		long timeDiff = (nowStop2 - nowStart1);
-
-
-		 return timeDiff;
-
-
-	 }
 	 }
 
 
