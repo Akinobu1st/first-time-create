@@ -1,35 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.chart.*?>
 <?import javafx.scene.text.*?>
 <?import javafx.geometry.*?>
 <?import javafx.scene.layout.*?>
 <?import java.lang.*?>
 <?import javafx.scene.control.*?>
 
-
-<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1327.0" prefWidth="1692.0" tabClosingPolicy="UNAVAILABLE" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1300.0" prefWidth="1500.0" tabClosingPolicy="UNAVAILABLE" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
   <tabs>
     <Tab text="Home">
          <content>
-            <TitledPane animated="false" text="TimeCard">
-              <content>
-                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+            <AnchorPane prefHeight="300.0" prefWidth="200.0">
+               <children>
+                  <BarChart layoutX="778.0" layoutY="517.0">
+                    <xAxis>
+                      <CategoryAxis side="BOTTOM" />
+                    </xAxis>
+                    <yAxis>
+                      <NumberAxis side="LEFT" />
+                    </yAxis>
+                  </BarChart>
+                  <ListView layoutX="6.0" layoutY="517.0" prefHeight="400.0" prefWidth="600.0" />
+                <AnchorPane layoutX="6.0" layoutY="317.0" minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="600.0">
                      <children>
-                        <Button layoutX="100.0" layoutY="65.0" mnemonicParsing="false" text="Work" />
-                        <Button layoutX="412.0" layoutY="65.0" mnemonicParsing="false" text="Finish" />
+                        <Button layoutX="67.0" layoutY="81.0" mnemonicParsing="false" text="Work" />
+                        <Button layoutX="403.0" layoutY="81.0" mnemonicParsing="false" text="Finish" />
                      </children>
                   </AnchorPane>
-              </content>
-               <padding>
-                  <Insets right="1100.0" />
-               </padding>
-            </TitledPane>
-         </content></Tab>
-    <Tab text="Weekly" />
-      <Tab text="Chat">
-        <content>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
-        </content>
-      </Tab>
+               </children>
+            </AnchorPane>
+         </content>
+    </Tab>
+    <Tab text="Chat">
+         <content>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" />
+         </content>
+    </Tab>
   </tabs>
 </TabPane>
